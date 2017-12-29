@@ -2,6 +2,7 @@
   "name": "bs-mochajs",
   "version": "0.1.0",
   "refmt": 3,
+  "namespace": true,
   "sources": [{
     "dir": "src",
     "subdirs": true
