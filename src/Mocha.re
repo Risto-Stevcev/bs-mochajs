@@ -13,6 +13,16 @@ external fail :
   (~actual: 'a, ~expected: 'a, ~message: string=?, ~operator: string=?, unit) => unit =
   "fail";
 
+[@bs.val] external before : (unit => unit) => unit = "before";
+[@bs.val] external before' : ((unit => unit) => unit) => unit = "before";
+[@bs.val] external before_each : (unit => unit) => unit = "beforeEach";
+[@bs.val] external before_each' : ((unit => unit) => unit) => unit = "beforeEach";
+[@bs.val] external after : (unit => unit) => unit = "after";
+[@bs.val] external after' : ((unit => unit) => unit) => unit = "after";
+[@bs.val] external after_each : (unit => unit) => unit = "afterEach";
+[@bs.val] external after_each' : ((unit => unit) => unit) => unit = "afterEach";
+[@bs.val] external it' : (string, (unit => unit) => unit) => unit = "it";
+
 type expect('a) = {
   to_be: 'a => unit,
   to_not_be: 'a => unit,
