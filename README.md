@@ -1,3 +1,3 @@
-# bs-mochajs
+# DEPRECATED
 
-This is just a placeholder repo for now until bs-mocha gets updated
+Use [bs-mocha](https://github.com/reasonml-community/bs-mocha/) instead
